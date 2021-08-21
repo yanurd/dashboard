@@ -1,6 +1,6 @@
-:root{
+:root {
   /* Primary Colors */
-  -lime-Green: hsl(163, 72%, 41%);
+  -lime-green: hsl(163, 72%, 41%);
   --brigh-red: hsl(356, 69%, 56%);
   --facebook: hsl(208, 92%, 53%);
   --twitter: hsl(203, 89%, 53%);
@@ -16,19 +16,18 @@
   --white-text: hsl(0, 0%, 100%);
 
   /* Light Colors */
-  --light-toggle: hsl(230,22%,74%);
-  --bg-white:hsl(0, 0%, 100%);
+  --light-toggle: hsl(230, 22%, 74%);
+  --bg-white: hsl(0, 0%, 100%);
   --top-bg-very-pale-blue: hsl(225, 100%, 98%);
   --card-bg-light-grayish-blue: hsl(227, 47%, 96%);
   --text-dark-grayish-blue: hsl(228, 12%, 44%);
   --text-very-dark-blue: hsl(230, 17%, 14%);
-
 }
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html {
@@ -36,4 +35,21 @@ html {
 }
 body {
   box-sizing: border-box;
+}
+
+/* .main {
+  display: grid;
+  grid-template: repeat(2, minmax(320px, 1fr)) / repeat(1, minmax(320px, 1fr));
+} */
+
+.big-cards {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(200px,1fr)) / repeat(auto-fit, minmax(320px,1fr));
+  gap: 10px;
+}
+
+.small-cards {
+  display: grid;
+  grid-template: repeat(auto-fit, minmax(200px,1fr)) / repeat(auto-fit, minmax(200px,1fr));
+  gap: 10px;
 }
