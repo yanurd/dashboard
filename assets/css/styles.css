@@ -63,7 +63,7 @@ h2 {
 .small-cards {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  gap: 15px;
   padding: 1.5rem;
 }
 .big-overview {
