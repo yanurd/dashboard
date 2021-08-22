@@ -63,7 +63,7 @@ const bigCardsOverview = () => {
       </div>
       <p class="${card.changeClass}">
         <img src="${card.changeIcon}" alt="${card.changeClass}" />
-        ${card.change}
+        ${card.change} Today
       </p>
     </div>
     `;
