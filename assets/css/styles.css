@@ -8,7 +8,6 @@
   --youTube: hsl(348, 97%, 39%);
 
   /* Dark Theme */
-  --dark-toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
   --bg-very-dark-blue: hsl(230, 17%, 14%);
   --top-bg-very-dark-blue: hsl(232, 19%, 15%);
   --card-dark-desaturated: hsl(228, 28%, 20%);
@@ -17,12 +16,15 @@
   --white-text: hsl(0, 0%, 100%);
 
   /* Light Colors */
-  --light-toggle: hsl(230, 22%, 74%);
   --bg-white: hsl(0, 0%, 100%);
   --top-bg-very-pale-blue: hsl(225, 100%, 98%);
   --card-bg-light-grayish-blue: hsl(227, 47%, 96%);
   --text-dark-grayish-blue: hsl(228, 12%, 44%);
   --text-very-dark-blue: hsl(230, 17%, 14%);
+
+  /* Switch Toggler */
+  --dark-toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --light-toggle: hsl(230, 22%, 74%);
 }
 
 * {
@@ -39,10 +41,9 @@ body {
 }
 
 .main {
-  /* display: grid;
-  grid-template: repeat(2, minmax(320px, 1fr)) / repeat(1, minmax(320px, 1fr)); */
   background-color: var(--bg-very-dark-blue);
   padding: 1.5rem;
+  height: 100%;
 }
 
 h2 {
