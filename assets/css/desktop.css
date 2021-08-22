@@ -1,3 +1,7 @@
+main {
+  padding: 6rem
+}
+
 .big-cards {
   grid-template: repeat(auto-fit, minmax(100px,1fr)) / repeat(auto-fit, minmax(237px,1fr));
 }
