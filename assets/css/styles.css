@@ -45,6 +45,13 @@ body {
   background-color: var(--bg-very-dark-blue);
 }
 /* Header */
+.header {
+  height: 45vh;
+  background: var(--top-bg-very-dark-blue);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
 .header-info {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
@@ -79,8 +86,10 @@ body {
 }
 
 .main {
-  padding: 1.5rem;
+  padding: 2.5rem 2rem;
   height: 100%;
+  position:relative;
+  bottom:10rem;
   z-index: 1;
 }
 
@@ -205,11 +214,11 @@ h2 {
 }
 
 .facebook {
-  border-top: 8px solid var(--facebook);
+  border-top: 6px solid var(--facebook);
 }
 
 .twitter {
-  border-top: 8px solid var(--twitter);
+  border-top: 6px solid var(--twitter);
 }
 .instagram {
   position: relative;
@@ -220,14 +229,14 @@ h2 {
   display: block;
   top: 0;
   width: 100%;
-  height: 8px;
+  height: 6px;
   background: var(--instagram);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 
 .youtube {
-  border-top: 8px solid var(--youTube);
+  border-top: 6px solid var(--youTube);
 }
 
 /* Toggler */
@@ -256,12 +265,12 @@ h2 {
   left: 30px;
 }
 .toggle-control input ~ .control::after {
-  background: hsl(230, 17%, 14%);
+  background: var(--card-dark-desaturated);
   transition: all 0.2s ease-in;
 }
 
 .toggle-control input:checked ~ .control::after {
-  background: white;
+  background: var(--bg-white);
 }
 .toggle-control .control {
   position: absolute;
@@ -269,7 +278,7 @@ h2 {
   left: 0;
   height: 30px;
   width: 60px;
-  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  background: var(--dark-toggle);
   border-radius: 25px;
   transition: background left 0.2s ease-in;
 }
