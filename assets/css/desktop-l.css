@@ -1,0 +1,3 @@
+.small-cards{
+  grid-template: repeat(auto-fit,minmax(150px,1fr)) / repeat(auto-fit,minmax(280px,1fr));
+}
