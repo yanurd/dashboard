@@ -9,7 +9,7 @@
 
   /* Dark Theme */
   --bg-very-dark-blue: hsl(230, 17%, 14%);
-  --top-bg-very-dark-blue: hsl(232, 19%, 15%);
+  --top-bg-very-dark-blue: hsl(232, 19%, 17%);
   --card-dark-desaturated: hsl(228, 28%, 20%);
   --card-dark-hover: hsl(228, 25%, 25%);
   --text-desaturated: hsl(228, 34%, 66%);
@@ -80,7 +80,7 @@ body {
 }
 
 .header-info_toggler h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: var(--text-desaturated);
   padding-top: 3rem;
 }
