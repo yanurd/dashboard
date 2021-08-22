@@ -38,10 +38,10 @@ html {
 }
 body {
   box-sizing: border-box;
+  background-color: var(--bg-very-dark-blue);
 }
 
 .main {
-  background-color: var(--bg-very-dark-blue);
   padding: 1.5rem;
   height: 100%;
 }
