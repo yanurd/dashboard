@@ -19,6 +19,7 @@
   --bg-white: hsl(0, 0%, 100%);
   --top-bg-very-pale-blue: hsl(225, 100%, 98%);
   --card-bg-light-grayish-blue: hsl(227, 47%, 96%);
+  --card-bg-light-hover: hsl(227 47% 93% / 1);
   --text-dark-grayish-blue: hsl(228, 12%, 44%);
   --text-very-dark-blue: hsl(230, 17%, 14%);
 
@@ -40,15 +41,15 @@
 html {
   font-size: 62.5%;
 }
-body {
+.body {
   box-sizing: border-box;
-  background-color: var(--bg-very-dark-blue);
-
+  background: var(--bg-white);
 }
+
 /* Header */
 .header {
   height: 300px;
-  background: var(--top-bg-very-dark-blue);
+  background: var(--top-bg-very-pale-blue);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
@@ -60,14 +61,14 @@ body {
 }
 
 .header-info h1 {
-  color: var(--white-text);
+  color: var(--text-very-dark-blue);
   font-size: 2.8rem;
   font-weight: 700;
 }
 
 .header-info h2 {
   margin-bottom: 2rem;
-  color: var(--text-desaturated);
+  color: var(--text-dark-grayish-blue);
   font-size: 1.6rem;
   font-weight: 700;
   padding: 0;
@@ -82,15 +83,15 @@ body {
 
 .header-info_toggler h2 {
   font-size: 2rem;
-  color: var(--text-desaturated);
+  color: var(--text-dark-grayish-blue);
   padding-top: 3rem;
 }
 
 .main {
   padding: 2.5rem 2rem;
   height: 100%;
-  position:relative;
-  bottom:10rem;
+  position: relative;
+  bottom: 10rem;
   z-index: 1;
 }
 
@@ -98,7 +99,7 @@ body {
   font-size: 2.6rem;
   font-weight: 700;
   padding: 2rem 2rem 0;
-  color: var(--white-text);
+  color: var(--text-very-dark-blue);
 }
 
 .big-cards {
@@ -122,13 +123,13 @@ body {
   justify-items: center;
   border-radius: 10px;
   padding: 1.5rem;
-  color: var(--bg-white);
+  color: var(--text-very-dark-blue);
 }
 
 .big-overview > p:first-child {
   display: flex;
   align-items: center;
-  color: var(--text-desaturated);
+  color: var(--text-dark-grayish-blue);
   font-size: 1.7rem;
 }
 .big-overview > p:first-child img {
@@ -151,7 +152,7 @@ body {
 }
 
 .big-overview > div > p:last-child {
-  color: var(--text-desaturated);
+  color: var(--text-dark-grayish-blue);
   text-transform: uppercase;
   letter-spacing: 8px;
   font-size: 1.5rem;
@@ -171,19 +172,19 @@ body {
 }
 
 .overview-card_text {
-  color: var(--white-text);
+  color: var(--text-very-dark-blue);
   font-size: 4rem;
   font-weight: 700;
   align-self: center;
 }
-.overview-card.dark-bg,
-.big-overview.dark-bg {
-  background: var(--card-dark-desaturated);
+.overview-card,
+.big-overview {
+  background: var(--card-bg-light-grayish-blue);
   transition: background 0.3s ease-in;
 }
-.overview-card.dark-bg:hover,
-.big-overview.dark-bg:hover {
-  background: var(--card-dark-hover);
+.overview-card:hover,
+.big-overview:hover {
+  background: var(--card-bg-light-hover);
 }
 .card-subtitle,
 .overview-card > img {
@@ -195,7 +196,7 @@ body {
 }
 
 .card-subtitle.desaturated {
-  color: var(--text-desaturated);
+  color: var(--text-dark-grayish-blue);
 }
 
 .up,
@@ -295,8 +296,44 @@ body {
   transition: left 0.2s ease-in;
 }
 
-@media screen and (min-width:410px) {
-  .main{
-    bottom: 13rem
+/* Dark Theme */
+
+.body.dark-bg {
+  background: var(--bg-very-dark-blue);
+}
+
+.header.dark-bg {
+  background: var(--top-bg-very-dark-blue);
+}
+.header.dark-bg .header-info h1,
+.big-overview.dark-bg,
+.overview-card.dark-bg .overview-card_text,
+.main.dark-bg h2 {
+  color: var(--white-text);
+}
+.header.dark-bg .header-info h2,
+.header.dark-bg .header-info_toggler h2,
+.card-subtitle.dark-bg.desaturated,
+.big-overview.dark-bg
+  > p:first-child
+  .big-overview.dark-bg
+  > div
+  > p:last-child,
+.card-subtitle.dark-bg.desaturated {
+  color: var(--text-desaturated);
+}
+.overview-card.dark-bg,
+.big-overview.dark-bg {
+  background: var(--card-dark-desaturated);
+  transition: background 0.3s ease-in;
+}
+.overview-card.dark-bg:hover,
+.big-overview.dark-bg:hover {
+  background: var(--card-dark-hover);
+}
+
+@media screen and (min-width: 410px) {
+  .main {
+    bottom: 13rem;
   }
 }

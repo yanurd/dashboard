@@ -48,7 +48,7 @@ const bigCardsOverview = () => {
   var bigCards = document.getElementById("big-cards");
   cards.forEach((card) => {
     bigCards.innerHTML += `
-    <div class="big-overview dark-bg ${card.class}">
+    <div class="big-overview ${card.class}">
       <p>
         <img 
           src="${card.icon}"
@@ -148,7 +148,7 @@ const smallCardsOverview = () => {
   var smallCards = document.getElementById("small-cards");
   overview.forEach((card) => {
     smallCards.innerHTML += `
-      <div class="overview-card dark-bg">
+      <div class="overview-card">
         <p class="card-subtitle desaturated">${card.title}</p>
         <img 
           src="${card.icon}" 
