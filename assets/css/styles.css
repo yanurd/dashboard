@@ -131,6 +131,7 @@ html {
   align-items: center;
   color: var(--text-dark-grayish-blue);
   font-size: 1.7rem;
+  font-weight: 700;
 }
 .big-overview > p:first-child img {
   padding-right: 1rem;
