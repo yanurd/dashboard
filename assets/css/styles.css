@@ -316,11 +316,12 @@ html {
 .header.dark-bg .header-info_toggler h2,
 .card-subtitle.dark-bg.desaturated,
 .big-overview.dark-bg
-  > p:first-child
+  > p:first-child,
   .big-overview.dark-bg
   > div
   > p:last-child,
-.card-subtitle.dark-bg.desaturated {
+.card-subtitle.dark-bg.desaturated,
+.overview-card.dark-bg .card-subtitle.desaturated {
   color: var(--text-desaturated);
 }
 .overview-card.dark-bg,
